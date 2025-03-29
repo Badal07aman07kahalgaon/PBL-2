@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f3fe; /* Light Purple Background */
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #6a11cb; /* Purple Theme */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links .active {
+    color: #ffd700; /* Gold highlight for active page */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4b0082; /* Dark Purple */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: white;
+    color: #4b0082;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Features & Services Section */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.feature-box, .service-box {
+    background: white;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-top: 5px solid #6a11cb; /* Purple Top Border */
+}
+
+.feature-box:hover, .service-box:hover {
+    transform: scale(1.05);
+}
+
+.feature-box h2, .service-box h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #6a11cb; /* Purple Heading */
+}
+
+.feature-box p, .service-box p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+button, .btn {
+    background: #6a11cb; /* Purple Buttons */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+button:hover, .btn:hover {
+    background: #4c0896; /* Darker Purple on Hover */
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.about, .features {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about img, .engagement img {
+    width: 40%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.features {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.feature-box img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Call-to-Action */
+.cta {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta .btn {
+    background-color: white;
+    color: #6a0dad;
+}
+
+/* Footer */
+.footer {
+    background: #6a11cb;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about img {
+        width: 80%;
+    }
+
+    .features {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-box, .service-box {
+        width: 80%;
+    }
+
+    .engagement img {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

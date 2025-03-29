@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Smart Governance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Smart Governance</div>
+        <ul class="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="case-studies.html">Case Studies</a></li>
+            <li><a href="contact.html  " class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Citizen Queries & Feedback</h2>
+        <p>Have a suggestion or complaint? Fill out the form below, and we’ll get back to you soon.</p>
+
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" rows="4" placeholder="Enter your feedback or complaint" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Need Help?</h3>
+            <p>Email: support@smartgov.com</p>
+            <p>Phone: +1 234 567 890</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chatbot / FAQ Section -->
+    <div class="chatbot-container">
+        <h3>Ask a Question</h3>
+        <p>Type your query below, and our AI assistant will help you.</p>
+        <textarea id="chatbot-input" placeholder="Ask something..."></textarea>
+        <button onclick="chatbotReply()">Send</button>
+        <div id="chatbot-response"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

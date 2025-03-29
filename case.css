@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f3fe; /* Light Purple Background */
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #6a11cb; /* Purple Theme */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links .active {
+    color: #ffd700; /* Gold highlight for active page */
+}
+
+/* Case Study Section */
+.case-study {
+    padding: 50px 20px;
+    background-color: #d8bfd8; /* Soft Purple */
+    text-align: center;
+}
+
+.case-study h1 {
+    color: #6a0dad;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.case-study .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.case-study .grid-item {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.case-study .grid-item:hover {
+    transform: translateY(-5px);
+    background: #d78373;
+    color: #ffffff;
+}
+
+.case-study img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .case-study h1 {
+        font-size: 1.5rem;
+    }
+}

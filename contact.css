@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f3fe; /* Light Purple Background */
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #6a11cb; /* Purple Theme */
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-links .active {
+    color: #ffd700; /* Gold highlight for active page */
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 600px;
+    margin: 120px auto 40px;
+    padding: 20px;
+    border: 2px solid #6a11cb;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-container h2 {
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #6a11cb;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+button {
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4b0082;
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 20px 0;
+    text-align: left;
+    padding: 15px;
+    background: #e6e0f8; /* Soft Purple Background */
+    border-radius: 5px;
+}
+
+.contact-info h3 {
+    color: #6a11cb;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Chatbot Section */
+.chatbot-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #6a11cb;
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-container h3 {
+    color: #6a11cb;
+    margin-bottom: 10px;
+}
+
+#chatbot-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6a11cb;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#chatbot-response {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #6a11cb;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .contact-container, .chatbot-container {
+        width: 90%;
+        margin: 100px auto 20px;
+    }
+}
